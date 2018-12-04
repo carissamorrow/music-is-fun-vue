@@ -2,7 +2,7 @@
   <div class="home container-fluid">
     <div class="row">
       <div class="col">
-        <h1>Welcome To Music Is Fun Vue</h1>
+        <h1 class="titles">Welcome To MUSIC IS FUN VUE!</h1>
       </div>
     </div>
     <div class="row">
@@ -55,6 +55,12 @@
 
 <style>
   .home {
-    background-color: lightblue;
+    background-color: silver;
+  }
+
+  .titles {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 </style>
