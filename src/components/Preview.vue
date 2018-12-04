@@ -5,6 +5,7 @@
     </div>
     <div v-if="song.trackName" class="row">
       <div class="col-12 font">
+        <img :src="song.img">
         <p>{{song.trackName}}</p>
         <p>{{song.collectionName}}</p>
         <p>{{song.collectionPrice}}</p>

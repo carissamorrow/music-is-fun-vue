@@ -26,7 +26,9 @@ export default new Vuex.Store({
     search({ commit, dispatch }, query) {
       songApi.get("search?&term=" + query)
         .then(res => {
-          let data = res.data.results
+          let data = res.data.results.map(s => {
+            return { ...s, img: s.artworkUrl100.replace(/100x100/g, '500x500') }
+          })
           commit('setResults', data)
         })
     },
