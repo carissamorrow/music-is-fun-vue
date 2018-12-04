@@ -9,6 +9,9 @@
         <p>{{song.trackName}}</p>
         <p>{{song.collectionName}}</p>
         <p>{{song.collectionPrice}}</p>
+        <audio controls>
+          <source :src="song.previewUrl">
+        </audio>
       </div>
     </div>
   </div>

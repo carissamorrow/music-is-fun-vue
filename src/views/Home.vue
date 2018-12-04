@@ -61,6 +61,6 @@
   .titles {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    text-emphasis-color: pink
   }
 </style>
