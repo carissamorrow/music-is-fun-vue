@@ -1,12 +1,12 @@
 <template>
   <div class="preview row">
     <div class="col">
-      <h2>Track Name:</h2>
+      <h2>Track Info:</h2>
     </div>
     <div v-if="song.trackName" class="row">
       <div class="col-12 font">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51Ib3jYSStL._SX425_.jpg">
         <p>{{song.trackName}}</p>
+        <p>{{song.collectionName}}</p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
   }
 
   .font {
-    font-size: 30px;
-    justify-content: space-around
+    font-size: 40px;
+
   }
 </style>
