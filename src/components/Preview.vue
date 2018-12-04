@@ -1,12 +1,12 @@
 <template>
   <div class="preview row">
     <div class="col">
-      <h2>Preview Song</h2>
+      <h2>Track Name:</h2>
     </div>
-    <div v-if="song.id" class="row">
-      <div class="col">
-        <img :src="" alt="">
-        <p>{{song.overview}}</p>
+    <div v-if="song.trackName" class="row">
+      <div class="col-12 font">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51Ib3jYSStL._SX425_.jpg">
+        <p>{{song.trackName}}</p>
       </div>
     </div>
   </div>
@@ -25,6 +25,12 @@
 
 <style>
   .preview {
-    background: lightskyblue
+    background: lightskyblue;
+    font-style: italic;
+  }
+
+  .font {
+    font-size: 30px;
+    justify-content: space-around
   }
 </style>

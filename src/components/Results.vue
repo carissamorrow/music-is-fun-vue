@@ -4,7 +4,7 @@
       <h2>SONG RESULTS: {{results.length}}</h2>
     </div>
     <div class="row">
-      <result v-for="(res, i) in results" class="col-12" :setActiveS="setActive" :class="{active: res.id == previewedSong}"
+      <result v-for="(res, i) in results" class="col-12" :setActiveS="setActive" :class="{active: res.trackName == previewedSong}"
         :songData="res" :index="i">
       </result>
     </div>
@@ -22,7 +22,7 @@
     },
     methods: {
       setActive(song) {
-        this.previewedSong = song.id
+        this.previewedSong = song.trackName
       }
     },
     computed: {
@@ -38,7 +38,9 @@
 
 <style>
   .results {
-    background: lightblue;
+    background: lightskyblue;
+    font-style: italic;
+
   }
 
   .active {

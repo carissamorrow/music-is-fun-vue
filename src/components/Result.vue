@@ -1,6 +1,6 @@
 <template>
   <div class="result">
-    <h4 @click="setActive">{{index+1}}. {{songData.title}} - {{songData.artist}}</h4>
+    <h4 @click="setActive">{{index+1}}. {{songData.trackName}} - {{songData.artistName}}</h4>
   </div>
 </template>
 
@@ -13,9 +13,9 @@
       }
     },
     computed: {},
+
     methods: {
       setActive() {
-        // this.$emit('imActive', this.songData)
         this.setActiveS(this.songData)
         this.$store.dispatch('setActiveSong', this.songData)
       },
