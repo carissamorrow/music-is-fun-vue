@@ -7,6 +7,7 @@
       <div class="col-12 font">
         <p>{{song.trackName}}</p>
         <p>{{song.collectionName}}</p>
+        <p>{{song.collectionPrice}}</p>
       </div>
     </div>
   </div>
